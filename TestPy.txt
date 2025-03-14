@@ -1,0 +1,135 @@
+GitHub Basics
+In this video, you'll learn the basic features and functions of GitHub.
+After watching this video, you will understand how to:
+Host your project on GitHub; Collaborate and contribute to an open source
+project; Test the integrity of your code.
+You will learn the basic steps that will enable you to:
+Host your own project; Contribute to an existing project.
+Let's look at how to host your Git project and related files in GitHub.
+You first need to create a GitHub account.
+When you've created your account, log in and click the Repositories tab.
+Click New to create a new repository.
+Provide a name and description for the repository.
+You can make the repository public or private, depending on whether you want other people
+to be able to see it.
+You can add any of the following files:
+A README file, which explains the project;
+A .gitignore file, which lists files to be ignored when tracking the project;
+A project license, which tells people what they can and can't do with your code.
+Click Create repository.
+The repository is created and is now ready for you to add files.
+Next, you'll learn how to add your project files to the repository.
+For this purpose, you need to install Git on your system.
+Once you have Git installed, you can clone your repository.
+When you clone a repository, you are downloading a copy of all the repository data on GitHub
+at that point in time, including all versions of every project file and folder, so that
+you can work on files on your local system before uploading to GitHub.
+In the repository you just created, click the Code button and then choose the clone
+method.
+In this video, we're using the "HTTPS" method.
+Copy the repository URL.
+Open a terminal window and type the 'git clone' command and then paste the URL.
+Run the command.
+When the process completes, a copy of the repository will have been created on your
+system in the location that you specified.
+Now that you have cloned the repository, you can start adding the project files.
+In the terminal window, change your current directory to the project directory you just
+cloned.
+Let’s say you have created a Python script "sample.py" in the project directory on your
+system.
+When you create a file in the project directory, you can use the 'git status' command to check
+its status.
+This command enables you to see: Changes that have been saved in the local
+Git repository; Files that have been added to Git's version
+control, but which have unsaved changes; Files that exist but are not a part of Git's
+version control.
+By running the 'git status' command against the project repository, you will see that
+the file "sample.py" is listed as an untracked file, which means that it's not yet being
+tracked as part of the version control.
+Next, you need to add the file to the Git version control system and then add it to
+the remote repository.
+To add the untracked file "sample.py" to the remote repository, you must add, commit, and
+push it using the following commands:
+'git add' moves changes from the working project directory to the staging area;
+'git commit' takes your staged snapshot of changes and commits them to the project.
+Think of it as a "safe" version of a project.
+Git will never change files unless you explicitly ask it to.
+Remember, it's always good practice to add a description to the commit command so you
+and other contributors can understand the reason for the change.
+'git push' uploads the local repository content to your remote repository.
+To help you understand how you're managing your files, compare this process with a hypothetical
+journey of a package from a warehouse to its destination.
+When the package arrives in the facility, package handlers store it in the warehouse.
+They will then load it to the delivery vehicle, which delivers the package to its final destination.
+When Git moves changes from the project directory to the staging area, it's similar to storing
+that package in the warehouse.
+When you commit the staged changes to the local project Git repository, it's like loading
+the package onto the delivery vehicle.
+Finally, when you push the changes to the remote repository, it's the equivalent of
+delivering the package to its final destination.
+This is what the commands and output look like in the terminal window.
+After you run the commands, the new file is added to the remote GitHub repository.
+To view the remote repository changes from the time of creation, navigate to the repository
+using your browser and click on "commits," as shown here.
+You can click on a commit ID to see the description of that specific commit and understand the
+intent of the committer.
+We have now covered some basic GitHub commands and ways to host your project files in a remote
+repository.
+Next, we'll look at updates to an open source project from the point of view of a contributor.
+This image shows a graphical representation of the tasks you'll complete:
+Let's imagine that you have found a GitHub project that you want to contribute to.
+The project is stored in a remote source repository.
+Remember that Git is a version control system, and it allows independent lines of development.
+A repository branch is like a separate working directory, staging area, and project history.
+The source code of the project is normally stored in the main branch of the Git repository
+and development of different functions and features takes place in different branches.
+When the functions and features have been tested and approved, they are merged back
+into the main branch.
+You first create a copy of the original repository.
+Your local repository will have the same branches as the source.
+To make your changes and additions, you will create a new branch.
+Once you make your changes and they are tested and reviewed, you'll request that your updates
+be merged with the remote repository's main branch.
+Now, let’s see this process in action.
+As a contributor, you can take part in activities besides coding, such as updating the project
+documentation, adding features, running tests, and more.
+When you're ready to make any kind of contribution, it is always a good practice to create a copy
+of the original GitHub repository.
+This copy resides on GitHub too, and acts as a sort of bridge between the original source
+repository and your local version.
+In Git terms, we call this repository copy a "fork".
+For example, suppose you want to contribute to the PyDAX open source project.
+You would create a copy of the repository by clicking the Fork button.
+You can now see the forked version of the PyDAX repository in your own list of GitHub
+repositories.
+When you work on code, it's a good idea to work in an environment that's separate from
+the main project.
+This gives you the freedom to experiment without the risk of introducing errors.
+As described earlier, in GitHub this separate environment is called a "branch."
+To create a branch, use the 'git checkout –b <branch-name>' command.
+In this example, we're creating a branch called "test branch".
+You can now make updates using the commands you've already learned.
+You can add or modify a file in your local repository.
+You can then commit and push your changes to your fork.
+Once you push your changes to your forked version of the repository, you'll see your
+new branch in the branch list.
+You're now ready to merge the updates from your fork back to the original project.
+How do you do this?
+You create a pull request.
+In a collaboration environment, it's always a good idea to have someone from the community
+review, approve, and merge your changes.
+When you create a pull request, you're requesting that project owners or administrators review
+the file that you want to add.
+Pull requests tell others about changes you've pushed to a branch in your remote repository
+on GitHub.
+To open a pull request, click the Compare & Pull Request button.
+You can include a description of your proposed modifications in the pull request to help
+the reviewers understand the purpose of your changes.
+After you open a pull request, you can discuss the potential changes with collaborators and
+add additional commits based on their recommendations.
+When the reviewers are satisfied, they can merge your changes into the project repository's
+main branch.
+You can find more information about Git and GitHub at https://try.github.io/.
+In this video, you have learned: The basics of GitHub from two perspectives:
+project owner and contributor; Commands for working with local and remote
+repositories; Ways to contribute to an open source project.
